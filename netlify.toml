@@ -1,0 +1,13 @@
+[build]
+  base = ""
+
+  publish = "build"
+
+  # Default build command.
+  command = "CI=false yarn build"
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://fantasy.premierleague.com/api/:splat"
+  status = 200
+  force = true
